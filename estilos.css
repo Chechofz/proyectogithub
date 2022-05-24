@@ -34,6 +34,7 @@ grid-template-areas:
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
 }
 
 .logo{
@@ -62,6 +63,9 @@ ul{
     color: #000000;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-transform: capitalize;
+}
+.nav a:hover{
+    color: #a9a9a9;
 }
 
 /* Main */
