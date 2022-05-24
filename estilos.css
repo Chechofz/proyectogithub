@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+}
+.grid-container > * {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+.grid-container{
+    display: grid;
+    gap: 2px;
+grid-template-areas:
+"header"
+"main"
+"footer";
+}
+/* Header */
+
+.header{
+    grid-area: header;
+    background-color: #add8e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px 2px #f5f5dc;
+    margin: 15px;
+}
+
+.nav{
+    width: 100%;
+}
+
+.nav ul li{
+    list-style: none;
+    margin: 10px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 180px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+}
+
+/* Main */
+.main{
+    grid-area: main;
+    background-color: rgba(41, 79, 129, 0.856);
+}
+
+.subt{
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    color: #b2afc7;
+}
+
+.contenedor{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(3, 100px);
+    grid-template-areas: 
+    ". matcin  mattre  matuy ."
+    ". matcin  mattre  matuy ." 
+    ". matcin  mattre  matuy .";
+}
+
+.item{
+    border: 2px solid #808080;
+    margin: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.matcin{
+    grid-area: matcin;
+    background-image: url(img/cincelado.jpg);
+    background-size: cover;
+    background-position: center;
+    }
+
+.mattre{
+    grid-area: mattre;
+    background-image: url(img/trenzado.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.matuy{
+    grid-area: matuy;
+    background-image: url(img/uruguayo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+                        /*beneficios*/
+
+.contenedor2{
+    display: grid;
+}
+
+h2{
+    text-align: center;
+    padding: 20px;
+    color: #b2afc7 ;
+}
+
+h3{
+    text-align: center;
+    color: #b2afc7;
+}
+
+.main p{
+    color: #000000;
+    padding: 8px;
+    text-align: left;
+}
+
+                /*PRODUCTOS*/
+
+.contenedor3{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    grid-template-areas: 
+    ". cin tren uru impe ."
+    ". loro paj  stan  tor ."
+    ". .  yerb yerb2   . .";
+}
+
+.cin{
+    grid-area: cin;
+    background-image: url(img/cincelado.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.tren{
+    grid-area: tren;
+    background-image: url(img/trenzado.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.uru{
+    grid-area: uru;
+    background-image: url(img/uruguayo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.impe{
+    grid-area: impe;
+    background-image: url(img/imperial2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.tor{
+    grid-area: tor;
+    background-image: url(img/torpedo2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.loro{
+    grid-area: loro;
+    background-image: url(img/bombilla\ pico\ loro.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.paj{
+    grid-area: paj;
+    background-image: url(img/bombilla\ pajarito.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.yerb{
+    grid-area: yerb;
+    background-image: url(img/yerbera1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.yerb2{
+    grid-area: yerb2;
+    background-image: url(img/yerbera2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.stan{
+    grid-area: stan;
+    background-image: url(img/Termo\ Stanley.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+                /*CONTACTO*/
+
+.registro{
+    text-align: center;
+    font-size: 25px;
+}
+
+
+/* Footer */
+.footer{
+    height: auto;
+    grid-area: footer;
+    background-color: rgba(41, 79, 129, 0.856);
+    font-size: 22px;
+    padding: 10px;
+    text-align: center;
+}
+.redess{
+    color: #f5f5dc;
+    letter-spacing: 15px;
+}
+
+/*vista tablet*/
+
+@media screen and (max-width: 768px) and (min-width: 321px) {
+    .header{
+    
+    background-color: seagreen;
+    }
+
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(3, 34%);
+        grid-template-rows: repeat(3, 100px);
+        grid-template-areas:
+        "matcin  mattre  matuy"
+        "matcin  mattre  matuy"
+        "matcin  mattre  matuy";
+    }
+}
